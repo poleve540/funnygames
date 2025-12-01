@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://djpkwmpq5uqf2"]
+
+[ext_resource type="Script" uid="uid://h3rgy1bxqf7s" path="res://entity.gd" id="1_l8rpl"]
+[ext_resource type="Texture2D" uid="uid://dpgjkb7oia20" path="res://assets/anime_girl_soilad.png" id="2_mea2q"]
+[ext_resource type="Script" uid="uid://to5ilxs64jpp" path="res://damage_collision.gd" id="3_mea2q"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qsp4k"]
+radius = 130.0
+height = 302.0
+
+[node name="AnimeGirl" type="Node2D"]
+script = ExtResource("1_l8rpl")
+health = 50
+type = 1
+metadata/anime = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.75897, 0.447115)
+texture = ExtResource("2_mea2q")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 2
+script = ExtResource("3_mea2q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_qsp4k")

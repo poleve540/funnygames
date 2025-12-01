@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://qpxkvvap0tmr"]
+
+[ext_resource type="Script" uid="uid://dnmto6h2fmvng" path="res://pizza_bullet.gd" id="1_i514n"]
+[ext_resource type="Texture2D" uid="uid://dkil4xdra52jn" path="res://assets/pngkit_pizza-slice-png_6003.png" id="2_ycrcj"]
+[ext_resource type="Script" uid="uid://cjh6xjnicyich" path="res://bullet.gd" id="3_ycrcj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_htxhm"]
+radius = 11.0
+height = 40.0
+
+[node name="Pizza" type="RigidBody2D"]
+linear_velocity = Vector2(1000, -800)
+script = ExtResource("1_i514n")
+
+[node name="PngkitPizzaSlicePng6003" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_ycrcj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4.8804016, 1.3089294)
+rotation = -1.5707941
+shape = SubResource("CapsuleShape2D_htxhm")
+
+[node name="Bullet" type="Area2D" parent="."]
+position = Vector2(-4.8804016, 1.3089294)
+script = ExtResource("3_ycrcj")
+boing_force = 0.0
+friction = 0.0
+metadata/_custom_type_script = "uid://cjh6xjnicyich"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bullet"]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_htxhm")
+
+[connection signal="tree_exited" from="Bullet" to="." method="_on_bullet_tree_exited"]

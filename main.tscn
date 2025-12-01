@@ -1,0 +1,433 @@
+[gd_scene load_steps=49 format=3 uid="uid://qso8slpxof7c"]
+
+[ext_resource type="Texture2D" uid="uid://plagfa21c2ix" path="res://assets/fire_spirit.png" id="1_7mycd"]
+[ext_resource type="Script" uid="uid://cru7ioa4r1j8c" path="res://main.gd" id="1_lswn8"]
+[ext_resource type="Texture2D" uid="uid://bknj1a8o3pnih" path="res://assets/electro_cheese.png" id="2_272bh"]
+[ext_resource type="PackedScene" uid="uid://bq5doibcmrpha" path="res://minion.tscn" id="3_0rl1p"]
+[ext_resource type="Script" uid="uid://dgaovv2y7exb3" path="res://fire_spirit.gd" id="3_kek77"]
+[ext_resource type="Script" uid="uid://chuax8wkn1s5q" path="res://electro_cheese.gd" id="4_272bh"]
+[ext_resource type="Texture2D" uid="uid://d2avfxr22mwxv" path="res://assets/g.jpg" id="5_4c57u"]
+[ext_resource type="PackedScene" uid="uid://cmejku0d7eep" path="res://blue_guy.tscn" id="6_1u8w0"]
+[ext_resource type="Texture2D" uid="uid://cibphehjsx0ui" path="res://assets/touching_tips_twin_feat_squid.webp" id="10_1u8w0"]
+[ext_resource type="Texture2D" uid="uid://ce8rwiw5i3pcs" path="res://assets/test.jpg" id="12_lswn8"]
+[ext_resource type="Texture2D" uid="uid://fhpsk3ymofqt" path="res://assets/New_Project_3.png" id="13_a6jrf"]
+[ext_resource type="Texture2D" uid="uid://ddubybg6m3kbr" path="res://assets/New_Project_5.png" id="14_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://cmb5yai18axmd" path="res://assets/New_Project_5.webp" id="15_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://bdu2w8ckpueeu" path="res://assets/New_Project_6.png" id="16_kq58d"]
+[ext_resource type="Texture2D" uid="uid://bywyaiqk5hbp6" path="res://assets/New_Project_8.png" id="17_seu75"]
+[ext_resource type="Texture2D" uid="uid://dpjs8f2jry2qn" path="res://assets/military_tab_1.png" id="18_htxhm"]
+[ext_resource type="PackedScene" uid="uid://qpxkvvap0tmr" path="res://pizza.tscn" id="18_jq2sk"]
+[ext_resource type="Texture2D" uid="uid://cp8h7x3as0pph" path="res://assets/ibrahim.png" id="19_a6jrf"]
+[ext_resource type="Texture2D" uid="uid://cma82drsn8d7o" path="res://assets/military_tab.png" id="19_jq2sk"]
+[ext_resource type="Script" uid="uid://c6ap1ukymhu7q" path="res://spinner.gd" id="19_kq58d"]
+[ext_resource type="Script" uid="uid://h3rgy1bxqf7s" path="res://entity.gd" id="19_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://dnjypgh7lk30q" path="res://assets/military.png" id="20_4k2k6"]
+[ext_resource type="Texture2D" uid="uid://meypn1if1320" path="res://assets/hospital_josh.jpg" id="21_0rl1p"]
+[ext_resource type="Script" uid="uid://to5ilxs64jpp" path="res://damage_collision.gd" id="21_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://2e04n1x4wrdn" path="res://assets/greenman.png" id="22_ok6jj"]
+[ext_resource type="Texture2D" uid="uid://bxurk316f88ft" path="res://assets/art.png" id="23_facbu"]
+[ext_resource type="Texture2D" uid="uid://dxcc8478jxyv5" path="res://assets/Screenshot_20250824_181915.png" id="24_b1qrp"]
+[ext_resource type="Script" uid="uid://byhbr0u7ey3g3" path="res://ibrahim_timer.gd" id="24_htxhm"]
+[ext_resource type="PackedScene" uid="uid://djpkwmpq5uqf2" path="res://anime_girl.tscn" id="24_lswn8"]
+[ext_resource type="AudioStream" uid="uid://u6owo4krubhv" path="res://assets/ytmp3free.cc_megaman-10-ost-solar-inferno-solar-man-theme-youtubemp3free.org.mp3" id="25_0odxb"]
+[ext_resource type="AudioStream" uid="uid://e2ra0hlcvwd4" path="res://assets/ibrahim.wav" id="26_4k2k6"]
+[ext_resource type="PackedScene" uid="uid://bkcnitpucle8p" path="res://green_meth.tscn" id="26_a6jrf"]
+[ext_resource type="PackedScene" uid="uid://rkyqpochpoa0" path="res://bullet_spawner.tscn" id="27_a6jrf"]
+[ext_resource type="Texture2D" uid="uid://bjes8ewd7wvkl" path="res://sockmit_necrophilia.jpg" id="34_4k2k6"]
+[ext_resource type="Script" uid="uid://xb14saa1wx0x" path="res://sockmit_necrophilia.gd" id="35_0rl1p"]
+[ext_resource type="Script" uid="uid://8pxym13qxcwp" path="res://minion_spawner.gd" id="36_ok6jj"]
+[ext_resource type="Texture2D" uid="uid://csdptu3ihg1xr" path="res://assets/horracer.png" id="37_facbu"]
+[ext_resource type="Script" uid="uid://cgj3xriix1mjs" path="res://horraces_timer.gd" id="38_b1qrp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xuqvo"]
+size = Vector2(92, 91.5)
+
+[sub_resource type="SystemFont" id="SystemFont_a6jrf"]
+font_names = PackedStringArray("Comic Sans MS")
+subpixel_positioning = 0
+
+[sub_resource type="Theme" id="Theme_xuqvo"]
+default_font = SubResource("SystemFont_a6jrf")
+
+[sub_resource type="LabelSettings" id="LabelSettings_2cqfq"]
+font_size = 24
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_yaehf"]
+font_size = 24
+font_color = Color(1, 0, 0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_lswn8"]
+font_names = PackedStringArray("Comic Sans MS", "Wingdings")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_a6jrf"]
+font = SubResource("SystemFont_lswn8")
+font_size = 64
+font_color = Color(0.9064396, 0.00051673176, 0.87767917, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lswn8"]
+size = Vector2(1152, 4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a6jrf"]
+size = Vector2(6, 648)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_facbu"]
+radius = 64.84231
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("game_over_label", "game_over_picture", "flich", "player", "score_label")]
+script = ExtResource("1_lswn8")
+game_over_label = NodePath("GameOver")
+game_over_picture = NodePath("GameOverPicture")
+flich = NodePath("FlichLiveRedAction")
+player = NodePath("BlueGuy")
+score_label = NodePath("ScoreLabel")
+metadata/_edit_lock_ = true
+
+[node name="TouchingTipsTwinFeatSquidward" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-295, 243)
+texture = ExtResource("10_1u8w0")
+
+[node name="ManaPowerup" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-77, 175)
+scale = Vector2(0.0616531, 0.0267969)
+texture = ExtResource("12_lswn8")
+
+[node name="NewProject3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-78, 463)
+texture = ExtResource("13_a6jrf")
+
+[node name="NewProject5" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-86, 528)
+texture = ExtResource("14_xuqvo")
+
+[node name="NewProject6" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-92, 591)
+texture = ExtResource("15_qsp4k")
+
+[node name="NewProject7" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-244, 477)
+texture = ExtResource("16_kq58d")
+
+[node name="NewProject8" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-235, 555)
+texture = ExtResource("17_seu75")
+
+[node name="MilitaryTab1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-362, 578)
+texture = ExtResource("18_htxhm")
+
+[node name="MilitaryTab" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-428, 520)
+texture = ExtResource("19_jq2sk")
+
+[node name="Military" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-403, 465)
+texture = ExtResource("20_4k2k6")
+
+[node name="GameOverPicture" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(458, 325)
+texture = ExtResource("21_0rl1p")
+
+[node name="Health" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-82, 305)
+texture = ExtResource("22_ok6jj")
+
+[node name="Art" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-75, 244)
+texture = ExtResource("23_facbu")
+
+[node name="FlichLiveRedAction" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(1066, 579)
+scale = Vector2(0.401639, 0.261726)
+texture = ExtResource("24_b1qrp")
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+modulate = Color(0.48156556, 0.48156556, 0.48156556, 1)
+z_index = -1
+scroll_offset = Vector2(21, 0)
+repeat_size = Vector2(5700, 0)
+autoscroll = Vector2(-1000, 0)
+
+[node name="G" type="Sprite2D" parent="Parallax2D"]
+texture_repeat = 2
+position = Vector2(1150, -8.799361e-11)
+rotation = 1.5708
+scale = Vector2(0.601235, 2.772)
+texture = ExtResource("5_4c57u")
+centered = false
+
+[node name="BlueGuy" parent="." node_paths=PackedStringArray("health_bar") instance=ExtResource("6_1u8w0")]
+z_index = 1
+position = Vector2(163, 354)
+collision_layer = 2
+health_bar = NodePath("../BlueHealth")
+
+[node name="Spinner" type="Node2D" parent="BlueGuy"]
+script = ExtResource("19_kq58d")
+
+[node name="Ibrahim" type="Node2D" parent="BlueGuy/Spinner"]
+position = Vector2(130, 2)
+script = ExtResource("19_xuqvo")
+health = 99999
+score_value = -1000000000
+gain_score_only_on_death = true
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="BlueGuy/Spinner/Ibrahim"]
+scale = Vector2(0.19010413, 0.19010413)
+texture = ExtResource("19_a6jrf")
+metadata/_edit_lock_ = true
+
+[node name="EntityHitbox" type="Area2D" parent="BlueGuy/Spinner/Ibrahim"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("21_qsp4k")
+metadata/_custom_type_script = "uid://to5ilxs64jpp"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlueGuy/Spinner/Ibrahim/EntityHitbox"]
+shape = SubResource("RectangleShape2D_xuqvo")
+metadata/_edit_lock_ = true
+
+[node name="IbrahimTimer" type="Timer" parent="BlueGuy/Spinner/Ibrahim"]
+unique_name_in_owner = true
+autostart = true
+script = ExtResource("24_htxhm")
+pizza = ExtResource("18_jq2sk")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BlueGuy/Spinner/Ibrahim/IbrahimTimer"]
+stream = ExtResource("26_4k2k6")
+volume_db = -10.0
+
+[node name="AnimeGirl" parent="." node_paths=PackedStringArray("health_bar") instance=ExtResource("24_lswn8")]
+process_mode = 4
+visible = false
+position = Vector2(884, 356)
+health = 40
+score_value = 100
+health_bar = NodePath("../AnimeHealth")
+
+[node name="BulletSpawner" parent="AnimeGirl" instance=ExtResource("27_a6jrf")]
+position = Vector2(-160, -4)
+spawnrate = 2.0
+
+[node name="GreenMeth" parent="AnimeGirl" node_paths=PackedStringArray("health_bar") instance=ExtResource("26_a6jrf")]
+position = Vector2(8, -179)
+health = 5
+score_value = -100
+health_bar = NodePath("../../CrystalHealth")
+
+[node name="BulletSpawner4" parent="AnimeGirl" instance=ExtResource("27_a6jrf")]
+position = Vector2(-39, 142)
+spawnrate = 1.0
+
+[node name="BlueHealth" type="ProgressBar" parent="."]
+modulate = Color(1, 0.5803922, 1, 1)
+offset_left = 9.0
+offset_top = 28.0
+offset_right = 240.84183
+offset_bottom = 55.0
+theme = SubResource("Theme_xuqvo")
+value = 100.0
+
+[node name="Label" type="Label" parent="BlueHealth"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 27.0
+offset_right = 113.0
+offset_bottom = 50.0
+text = "This is green^"
+
+[node name="AnimeHealth" type="ProgressBar" parent="."]
+modulate = Color(5.246252e-06, 0.9196715, 0.1774421, 1)
+offset_left = 890.0
+offset_top = 28.0
+offset_right = 1121.8418
+offset_bottom = 55.0
+theme = SubResource("Theme_xuqvo")
+value = 100.0
+
+[node name="Label" type="Label" parent="AnimeHealth"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 27.0
+offset_right = 113.0
+offset_bottom = 50.0
+text = "This is pink^"
+
+[node name="CrystalHealth" type="ProgressBar" parent="."]
+modulate = Color(5.246252e-06, 0.9196715, 0.1774421, 1)
+offset_left = 1024.0
+offset_top = 58.0
+offset_right = 1121.8418
+offset_bottom = 85.0
+theme = SubResource("Theme_xuqvo")
+value = 100.0
+
+[node name="Label" type="Label" parent="CrystalHealth"]
+layout_mode = 0
+offset_left = -18.0
+offset_top = 1.0
+offset_bottom = 24.0
+text = "C:"
+
+[node name="FireSpirit" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-133, 685)
+scale = Vector2(1.09848, 1.09848)
+texture = ExtResource("1_7mycd")
+script = ExtResource("3_kek77")
+
+[node name="ElectroCheese" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-267, 674)
+texture = ExtResource("2_272bh")
+script = ExtResource("4_272bh")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 10.0
+offset_right = 161.0
+offset_bottom = 23.0
+text = "Score: 999"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 249.0
+offset_top = 80.0
+offset_right = 731.0
+offset_bottom = 188.0
+text = "DONT SHOOT THE CRYSTAL
+KILL THE CHILD
+You know what they say: Only in Alabama"
+label_settings = SubResource("LabelSettings_2cqfq")
+metadata/_edit_lock_ = true
+
+[node name="Label2" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 293.0
+offset_top = 75.0
+offset_right = 588.0
+offset_bottom = 166.0
+text = "Only in Alabama"
+label_settings = SubResource("LabelSettings_yaehf")
+metadata/_edit_lock_ = true
+
+[node name="GameOver" type="Label" parent="."]
+visible = false
+offset_left = 298.0
+offset_top = 202.0
+offset_right = 677.0
+offset_bottom = 292.0
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_a6jrf")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25_0odxb")
+volume_db = -20.0
+pitch_scale = 2.0
+autoplay = true
+
+[node name="BulletSpawner2" parent="." instance=ExtResource("27_a6jrf")]
+position = Vector2(705, 448)
+spawnrate = 2.0
+
+[node name="BulletSpawner3" parent="." instance=ExtResource("27_a6jrf")]
+position = Vector2(704, 302)
+spawnrate = 2.0
+
+[node name="BulletSpawner5" parent="." instance=ExtResource("27_a6jrf")]
+position = Vector2(841, 86)
+spawnrate = 2.0
+
+[node name="BulletSpawner6" parent="." instance=ExtResource("27_a6jrf")]
+position = Vector2(841, 189)
+spawnrate = 2.0
+
+[node name="BulletSpawner7" parent="." instance=ExtResource("27_a6jrf")]
+position = Vector2(841, 222)
+spawnrate = 2.0
+
+[node name="WorldBoundaries" type="StaticBody2D" parent="."]
+position = Vector2(10, 659)
+collision_mask = 2
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldBoundaries"]
+position = Vector2(566, -9)
+shape = SubResource("RectangleShape2D_lswn8")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WorldBoundaries"]
+position = Vector2(1145, -335)
+shape = SubResource("RectangleShape2D_a6jrf")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="WorldBoundaries"]
+position = Vector2(566, -661)
+shape = SubResource("RectangleShape2D_lswn8")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="WorldBoundaries"]
+position = Vector2(-13, -335)
+shape = SubResource("RectangleShape2D_a6jrf")
+
+[node name="SockmitNecrophilia" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+process_mode = 4
+z_index = 2
+position = Vector2(566, -190)
+scale = Vector2(0.15555553, 0.15555553)
+texture = ExtResource("34_4k2k6")
+script = ExtResource("35_0rl1p")
+
+[node name="MinionSpawner" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 5.0
+autostart = true
+script = ExtResource("36_ok6jj")
+minion = ExtResource("3_0rl1p")
+
+[node name="Horraces" type="Node2D" parent="." node_paths=PackedStringArray("health_bar")]
+position = Vector2(1076, 316)
+script = ExtResource("19_xuqvo")
+speed = 200.0
+health = 60
+score_value = 150
+type = 3
+health_bar = NodePath("../AnimeHealth")
+metadata/_custom_type_script = "uid://h3rgy1bxqf7s"
+metadata/_edit_group_ = true
+
+[node name="Horracer" type="Sprite2D" parent="Horraces"]
+texture = ExtResource("37_facbu")
+
+[node name="EntityHitbox" type="Area2D" parent="Horraces"]
+position = Vector2(0, -13.019867)
+collision_mask = 2
+script = ExtResource("21_qsp4k")
+metadata/_custom_type_script = "uid://to5ilxs64jpp"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horraces/EntityHitbox"]
+shape = SubResource("CircleShape2D_facbu")
+
+[node name="HorracesAI" type="Timer" parent="Horraces" node_paths=PackedStringArray("node")]
+script = ExtResource("38_b1qrp")
+node = NodePath("..")
+
+[connection signal="health_changed" from="BlueGuy" to="." method="_on_blue_guy_health_changed"]
+[connection signal="timeout" from="BlueGuy/Spinner/Ibrahim/IbrahimTimer" to="BlueGuy/Spinner/Ibrahim/IbrahimTimer" method="_on_timeout"]
+[connection signal="health_changed" from="AnimeGirl" to="." method="_on_anime_girl_health_changed"]
+[connection signal="health_changed" from="AnimeGirl/GreenMeth" to="." method="_on_green_meth_health_changed"]
+[connection signal="timeout" from="MinionSpawner" to="MinionSpawner" method="_on_timeout"]
+[connection signal="timeout" from="Horraces/HorracesAI" to="Horraces/HorracesAI" method="_on_timeout"]

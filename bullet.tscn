@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfolycmuo5d7h"]
+
+[ext_resource type="Script" uid="uid://cjh6xjnicyich" path="res://bullet.gd" id="1_v8qja"]
+[ext_resource type="Texture2D" uid="uid://d0ceeelo1cwrm" path="res://assets/benadryl.png" id="2_t4vbm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a6jrf"]
+size = Vector2(81, 53)
+
+[node name="Bullet" type="Area2D" groups=["bullets"]]
+script = ExtResource("1_v8qja")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_t4vbm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_a6jrf")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+rect = Rect2(-43, -29, 86, 58)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

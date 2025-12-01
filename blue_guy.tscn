@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://cmejku0d7eep"]
+
+[ext_resource type="Script" uid="uid://h3rgy1bxqf7s" path="res://entity.gd" id="1_f1tyu"]
+[ext_resource type="Texture2D" uid="uid://d4ke8hhajo7md" path="res://assets/blue_thing.png" id="2_7wu20"]
+[ext_resource type="PackedScene" uid="uid://cfolycmuo5d7h" path="res://bullet.tscn" id="2_nvyax"]
+[ext_resource type="Script" uid="uid://to5ilxs64jpp" path="res://damage_collision.gd" id="3_s1blc"]
+[ext_resource type="Script" uid="uid://c8ia7lfewmemr" path="res://player_controller.gd" id="5_smra0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xuqvo"]
+size = Vector2(40, 20)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_f1tyu")
+score_value = -500
+type = 2
+bullet = ExtResource("2_nvyax")
+
+[node name="BlueGuy" type="Area2D" parent="."]
+collision_layer = 2
+monitoring = false
+script = ExtResource("3_s1blc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlueGuy"]
+shape = SubResource("RectangleShape2D_xuqvo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_7wu20")
+offset = Vector2(-8, -20)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xuqvo")
+debug_color = Color(0, 0.6, 0.7019608, 0.41960785)
+
+[node name="PlayerMovementController" type="Node" parent="."]
+script = ExtResource("5_smra0")
